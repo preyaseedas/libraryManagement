@@ -37,9 +37,9 @@ export default function Navber() {
 const style = {
   nav: {
     height: "38px",
-    width: "1170px",
+    width: "100%",
     marginTop: "50px",
-    marginLeft: "135px",
+
     color: "Black",
     fontSize: "20px",
     backgroundColor: "orange",
