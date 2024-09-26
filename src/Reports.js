@@ -5,6 +5,7 @@ export default function Report() {
   return (
     <div>
       <Navber />
+      11
     </div>
   );
 }

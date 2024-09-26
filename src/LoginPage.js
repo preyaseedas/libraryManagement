@@ -1,16 +1,26 @@
 import React, { useState } from "react";
 import "./LoginPage.css";
 import { useNavigate } from "react-router-dom";
-import Admin_home_page from "./Admin_home_page";
 
 export default function LoginPage() {
-  const [dentials, setdentials] = useState({
+  const navigate = useNavigate();
+
+  const [credentials, setCredentials] = useState({
     UserID: "",
     Password: "",
   });
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (credentials.UserID === "admin" && credentials.Password === "password") {
+      navigate("/Admin_home");
+    } else {
+      alert("Invalid, redplease try again!");
+    }
   };
+  const handleChange = (e) => {
+    setCredentials({ ...credentials, [e.target.name]: e.target.value });
+  };
+
   return (
     <div className="login-page">
       <div className="login">
@@ -21,7 +31,9 @@ export default function LoginPage() {
           <input
             className="input_box"
             type="text"
-            value={dentials.username}
+            name="UserID"
+            value={credentials.UserID}
+            onChange={handleChange}
             required
           />
 
@@ -31,7 +43,8 @@ export default function LoginPage() {
             className="input_box"
             type="password"
             name="password"
-            value={dentials.password}
+            value={credentials.Password}
+            onChange={handleChange}
             required
           />
 
@@ -41,15 +54,19 @@ export default function LoginPage() {
               <tr>
                 <td>
                   <button
-                    id="button"
-                    onClick={() => setdentials({ UserID: "", Password: "" })}
+                    id="login_button"
+                    onClick={() => setCredentials({ UserID: "", Password: "" })}
                   >
                     cancel
                   </button>
                 </td>
                 <td>
                   {" "}
-                  <button id="button" onClick={() => {}} type="submit">
+                  <button
+                    id="login_button"
+                    type="submit"
+                    onClick={() => setCredentials({ UserID: "", Password: "" })}
+                  >
                     Login
                   </button>
                 </td>

@@ -7,7 +7,7 @@ export default function Admin_home_page() {
   return (
     <>
       <div>
-        <Navber />
+        <Layout />
       </div>
     </>
   );

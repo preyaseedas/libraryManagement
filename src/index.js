@@ -9,11 +9,12 @@ import Book_search from "./Book_Details/Book_search";
 import LoginPage from "./LoginPage";
 import Book_return from "./Book_Details/Book_return";
 import Book_available from "./Book_Details/Book_available";
+import Admin_home_page from "./Admin_home_page";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Layout />
+    <Admin_home_page />
   </React.StrictMode>
 );
 

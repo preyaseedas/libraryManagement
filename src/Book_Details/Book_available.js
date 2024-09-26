@@ -3,7 +3,7 @@ import "./Book_details.css";
 
 export default function Book_available() {
   return (
-    <div className="book_available ">
+    <div className=" ">
       <h1> BOOK Availability</h1>
       <label>Enter Book Name</label>
       <input type="select" />
@@ -14,7 +14,6 @@ export default function Book_available() {
         <button id="button" onClick={() => {}}>
           Search
         </button>
-        <button>Log Out</button>{" "}
       </div>
     </div>
   );

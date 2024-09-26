@@ -1,6 +1,6 @@
-#button {
+#login_button {
   height: 30px;
-  width: 100px;
+  width: 80px;
   background-color: rgb(86, 149, 243);
   color: white;
   border: none;
@@ -32,9 +32,11 @@
 
 .login {
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
+  padding: 50px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(193, 99, 99, 0.2);
   height: 450px;
   width: 400px;
+}
+.login p {
 }

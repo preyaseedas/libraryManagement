@@ -12,10 +12,10 @@ export default function Layout() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Maintenance />}></Route>
+        <Route path="/" element={<Maintenance />} />
 
-        <Route path="/Reports" element={<Reports />}></Route>
-        <Route path="/Transaction" element={<Transaction />}></Route>
+        <Route path="/Reports" element={<Reports />} />
+        <Route path="/Transaction" element={<Transaction />} />
       </Routes>
     </Router>
   );
